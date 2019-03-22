@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="云南,">
 
 
 
@@ -87,6 +87,7 @@
 
 
 <meta name="description" content="云南之行，持续更新…">
+<meta name="keywords" content="云南">
 <meta property="og:type" content="article">
 <meta property="og:title" content="云南游记">
 <meta property="og:url" content="http://yoursite.com/2019/03/21/YunNan/index.html">
@@ -121,7 +122,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/03/21/YunNan/thumb_DSC00729_1024.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/21/YunNan/thumb_DSC00761_1024.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/21/YunNan/thumb_DSC00773_1024.jpg">
-<meta property="og:updated_time" content="2019-03-22T01:49:59.642Z">
+<meta property="og:updated_time" content="2019-03-22T06:00:18.681Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="云南游记">
 <meta name="twitter:description" content="云南之行，持续更新…">
@@ -396,6 +397,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/03/21/YunNan/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/21/YunNan/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -570,6 +581,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/云南/" rel="tag"># 云南</a>
+          
+        </div>
+      
 
       
       
@@ -616,6 +633,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -688,7 +708,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -985,6 +1005,28 @@ setInterval("createtime()",250);
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'zeQq0kLBM4MQGeF1CwTKCOgn-gzGzoHsz',
+        appKey: 'Xv4iBXQ9GmoXHaazhpcnrnQe',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

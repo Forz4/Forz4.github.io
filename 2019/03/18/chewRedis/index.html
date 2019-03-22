@@ -103,7 +103,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/03/18/chewRedis/dict_rehash5.png">
 <meta property="og:image" content="http://yoursite.com/2019/03/18/chewRedis/dict_rehash6.png">
 <meta property="og:image" content="http://yoursite.com/2019/03/18/chewRedis/skiplist.png">
-<meta property="og:updated_time" content="2019-03-22T01:50:20.226Z">
+<meta property="og:updated_time" content="2019-03-22T05:59:47.993Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Redis源码阅读">
 <meta name="twitter:description" content="收录了一些对redis源码实现的理解，持续更新…">
@@ -377,6 +377,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/03/18/chewRedis/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/18/chewRedis/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -702,6 +712,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -773,7 +786,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1070,6 +1083,28 @@ setInterval("createtime()",250);
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'zeQq0kLBM4MQGeF1CwTKCOgn-gzGzoHsz',
+        appKey: 'Xv4iBXQ9GmoXHaazhpcnrnQe',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
